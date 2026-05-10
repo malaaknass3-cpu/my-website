@@ -1,0 +1,291 @@
+@font-face{
+    font-family: myFont1;
+    src: url(fonts/my\ font1\ .ttf);
+}
+@font-face{
+    font-family: myFont2;
+    src: url(fonts/Lobster\ 1.4.otf);
+}
+html,body{
+    width: 100%;
+    margin: 0;
+    padding: 0%;
+    overflow-x: hidden;
+}
+body{
+    background-color: white;
+}
+section{
+    padding: 2rem 9%;
+}
+h2{
+    font-family: myFont2;
+    text-align: center; 
+    font-size: 50px;  
+    margin-top: 20px; 
+}
+ header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    width: auto;
+    height: 150px;
+    background-color: #920000;
+    padding: 0.1rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     z-index: 1000;    
+    
+ }
+ .logo{
+     height: 150px ;
+    width: auto ;
+    flex-shrink: 0;
+ }
+ .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: aliceblue;
+    font-family: myFont1;
+ }
+
+ .navbar a:hover{
+    color: #ff7b00;
+    text-shadow: 2px 2px 5px black;
+    letter-spacing: 2px;
+ }
+
+main{
+    height: 80%;
+    width: auto;
+    padding-top: 80px;
+}
+ .home{
+    position: sticky;   
+    min-height: 100vh;
+    padding: 0.1rem;
+    background-color: maroon;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url(images/PizzaG.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+ }
+ .home h1{
+    width: 100%;
+    margin-left: auto;
+    text-align: right;
+    padding-right: 190px;
+    font-size: 65px;
+    font-family: myFont1;
+    color: whitesmoke;
+}
+.about{
+    text-align: center;
+    padding: 60px 10%;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+.about-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.about-text{
+flex: 1;
+column-count: 2;
+column-gap: 40px;
+column-rule: 2px solid #ccc;
+flex-direction: row-reverse;
+justify-content: center;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight: bold;
+font-size: 25px;
+color: darkred;
+}
+details summary{
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #c02b2b;
+}
+figure{
+    flex: 1;
+    margin: 0;
+    text-align: center;
+}
+
+.PizzaV{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+figcaption{
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: black;
+}
+
+
+
+.menu{
+    text-align: center;
+    padding: 30px;
+}
+
+
+.Products{
+   display: inline-block;
+   width: 380px;
+   height: auto;
+   margin: 20px;
+   padding: 15px;
+   border-radius: 15px;
+   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+   transition: 0.3s ease;
+   background-color:maroon;
+   vertical-align: top;
+}
+
+.Products:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.Products img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.Products h3{
+    margin: 10px 0 5px;
+        color: whitesmoke;
+
+}
+.Products p{
+    font-weight: bold;
+    color: whitesmoke;
+}
+.Products input{
+    padding: 8px 12px;
+    border: none;
+    background-color:moccasin;
+    color: black;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.Products input:hover{
+    background: #e60000;
+}
+
+.contact{
+    text-align: center;
+    padding: 40px;
+}
+.contact-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.form-box, .box-quiz{
+    width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    transition: 0.3s;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+.form-box:hover, .box-quiz:hover{
+    transform: translateY(-8px);
+}
+input, textarea{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid  #ccc;
+}
+button{
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background: #ff4d4d;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover{
+    background: #e60000;
+}
+
+.box-quiz label{
+    display: block;
+    margin: 10px 0;
+}
+.from-box p::first-letter,
+.box-quiz p::first-letter{
+    font-size: 22px;
+    font-weight: bold;
+    color: #920000;
+}
+
+.form-box h3::first-letter,
+.contact h2::first-letter{
+font-size: 30px;
+color: #e60000;
+font-weight: bold;
+font-size: 50px;
+}
+
+.footer{
+    background-color: #920000;
+    color: white;
+    padding: 20px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.social-icons img{
+width: 20px;
+margin: 0 5px;
+cursor: pointer;
+}
+
+.footer-links{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.footer-links a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 14px;
+}
+.footer-links a:hover{
+    color: #ff4d4d;
+}
+ .footer-bottom{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    opacity: 0.7;
+ }

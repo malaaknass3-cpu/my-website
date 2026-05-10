@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Take a Slice</title>
+     <link rel="icon" href="images/Icon.png">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- headr -->
+    <header>
+      <img src="images/Logo.jpeg" alt="logo" class="logo" >
+      <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About us</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact us</a>
+      </nav>
+    </header>
+    <!-- main -->
+    <main>
+        <!-- home section-->
+<section class="home" id="home">
+    <h1>Life is better with Pizza</h1>
+</section >
+
+<section class="about" id="about">
+    <h2>About Us</h2>
+    <div class="about-section">
+        <div class="about-text">
+<p>At Take a Slice we make pizza with love. We want everyone enjoy good pizza anytime.
+We use fresh ingredients and make our dough by hand every day. Our sauces are rich and full of flavor and we try our best to make every slice tasty and satisfying.
+Take a Slice is not only for eating, it is a place to feel happy, share with friends and family and come again for your favorite pizza because "One slice is never enough".</p> 
+<details>
+    <summary> see more... </summary>
+        <p>We also care about good service and friendly team. Our goal is to make every customer feel welcome and comfortable like they are at home. We always try to improve and give better experience every time.
+           <br> We believe good food brings people together. That is why we focus on simple recipes, good quality and making moments that people enjoy with family and friends.
+        </p>
+</details>
+ </div>
+<figure>
+<video class="PizzaV" autoplay controls>
+    <source src="video/pizza.mp4" type="video/mp4"/>
+    Your browser does not support the video element.
+</video>
+<figcaption>Made with love and baked to perfection</figcaption>
+</figure>
+</div>
+</section>
+        <!-- menu section-->
+
+<section class="menu" id="menu">
+<h2>Our Menu</h2>
+<br>
+<audio controls>
+    <source src="audio/Cozy Pizzeria Music.MP3" type="audio/mpeg">
+    Your browser does not support the audio element.
+ </audio>
+ <br>
+         <!-- Products section-->
+
+<div class="Products">
+    <img src="images/pizza margherita.jpg" alt="Pizza margherita image">
+    <h3>Pizza Margherita</h3>
+      <P>Price:1.000BD</P>
+    <input type="submit" value="Order Now!" onclick="orderButton()">
+</div>
+
+<div class="Products">
+    <img src="images/pizza vegetable.jpg" alt="Pizza vegetable image">
+    <h3>Pizza Vegetable</h3>
+    <P>Price:1.5BD</P>
+    <input type="submit" value="Order Now!" onclick="orderButton()">
+</div>
+
+<div class="Products">
+    <img src="images/pizza pepperoni.jpg" alt="Pizza pepperoni image">
+    <h3>Pizza pepperoni</h3>
+      <P>Price:2.000BD</P>
+    <input type="submit" value="Order Now!" onclick="orderButton()">
+</div>
+</section>
+        <!-- contact section-->
+
+<section class="contact" id="contact">
+    <h2>For Contact Us</h2>
+    <div class="contact-container">
+        <div class="form-box">
+     <form id="from">
+      <label for="name">Name:
+       <input type="text" id="name" name="name"  placeholder="Enter your name">
+       <p id="nameError"></p>
+      </label>
+
+      <br><br>
+      <label for="number">Phone number:
+       <input type="text" id="number" name="number"  placeholder="+1 3339309">
+       <p id="numberError"></p>
+      </label>
+
+      <br><br>
+     <label for="email">Email:
+      <input type="email" id="email" name="email"  placeholder="Enter your name email">
+      <p id="emailError"></p>
+     </label>
+
+      <br><br>
+      <label for="msg"> Message: <br>
+     <textarea name="msg" id="msg"   placeholder="Message"></textarea>
+     <p id="messageError"></p>
+      </label>
+
+     <br><br>
+      <button type="button" value="submit" onclick="vaildateForm()"> Submit</button>
+     </form> 
+</div>
+
+
+<div class="box-quiz">
+<h3>What’s your favorite pizza?</h3>
+    <form id="quiz">
+        <input type="radio" name="Pizza" value="Pepperoni">Pepperoni Pizza
+        <br> <br>
+        <input type="radio" name="Pizza" value="Margherita"> Margherita Pizaa
+        <br> <br>
+        <input type="radio" name="Pizza" value="Vegetable"> Vegetable Pizza 
+        <button type="button" onclick=" checkAnswer()"> Submit </button>
+        <br>
+        <p id="result"></p>
+    </form>
+</div>
+
+</div>
+<br><br>
+</section>
+
+    </main>
+<!--footer-->
+    <footer class="footer" id="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+          <img src="images/Logo.jpeg" alt="logo" class="logo" >
+    
+              <div class="social-icons">
+               <img src="images/instagram.png" alt="IA icon">
+               <img src="images/twitter.png" alt="Twitter icon">
+              </div>
+
+        </div>
+
+          <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About us</a>
+          <a href="#menu">Menu</a>
+          <a href="#contact">Contact us</a> 
+          </div>
+    
+    </div>
+
+    <div class="footer-bottom"> 
+    ©Created By Malaak Nass. All right reserved 
+   </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
